@@ -1,0 +1,191 @@
+* {
+  /*zerar as margens externas dos elementos */
+  margin: 0;
+
+  /*Zerar as margens internas dos elementos */
+  padding: 0;
+
+  /*Ajustes das caixas (box) dos elementos */
+  box-sizing: border-box;
+}
+
+header {
+  height: 350px; /*Altura da Caixa*/
+  /* Adicionar uma imagem ao fundo */
+
+  background-image: url("../img/fundo.jpg");
+  /* ajustar a largura da imagem em 100% */
+
+  background-size: 100%;
+  /* Ajustar a posição em X e Y da imagem de fundo */
+
+  background-position: 0 -330px;
+  /* Animação no fundo */
+
+  transition: ease 1s;
+  padding-top: 140px;
+}
+
+h1 {
+  text-align: center;
+  font-family: verdana;
+  color: white;
+  /* Aplicar uma sombra no texto */
+  text-shadow: 10px 10px 4px black;
+  font-size: 50px;
+}
+
+nav {
+  background-color: rgba(83, 92, 95, 0.733);
+  text-align: center;
+  transition: ease 0.5s;
+}
+
+nav ul li {
+  /* dispor os itens da lista (li) em linha */
+  display: inline-block;
+
+  /* aumentar a distância entre os elementos */
+  padding: 20px; /* aumentar a margem interna */
+  transition: 1s;
+}
+
+/* ao passar o mouse sobre o link o fundo link deve
+  alterar sua cor */
+
+nav ul li:hover {
+  background-color: beige;
+}
+
+nav ul li a {
+  font-family: "vernada";
+  font-size: 17pt;
+  color: rgb(0, 0, 0);
+
+  /*retirar o underline no link */
+  text-decoration: none; /* Nenhum */
+}
+
+footer {
+  height: 300px; /* Altura em 300px */
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: "arial";
+  padding-top: 25px;
+
+  /* dispor de forma flexível e em linha */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+footer div {
+  width: 30%;
+  margin: 80px;
+}
+
+#redes ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+#redes ul li a img {
+  width: 50px;
+  height: 50px;
+}
+
+/* --------------- Início do CSS da HOME ------------------- */
+
+h2 {
+  font-family: "arial";
+  font-size: 30pt;
+  margin: 50px;
+  border-bottom: 2px solid black;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#home p {
+  width: 90%;
+  margin-left: auto; /*para a margem ficar alinhada para a esquerda*/
+  margin-right: auto; /*para margem ficar alinhada para direira*/
+  font-family: "verdana"; /*Tipo de Fonte*/
+  font-size: 12pt; /*Tamanho da Fonte*/
+  line-height: 20pt; /* <-- Espaçamento de Linhas */
+  text-align: justify;
+}
+
+#imgHome {
+  text-align: center; /*Para deixar a imagem no centro*/
+}
+
+#imgHome img {
+  width: 900px; /*Largura da Imagem*/
+
+  height: 500px; /*Altura da Imagem*/
+
+  margin: 50px; /*Margin da Imagem*/
+
+  opacity: 1; /*Deixar Tranparente a Imagem*/
+
+  transition: ease 0.8s; /*Transição da Imagem*/
+
+  /* Mudar o ponteiro do mouse para uma mão */
+  cursor: pointer;
+}
+
+#imgHome img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* --------------- Inicio da Formatação da página contato -------------------- */
+
+main form {
+  width: 40%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form input[type="text2"],
+main form input[type="date"],
+main form input[type="time"],
+main form input[type="tel"],
+main form select,
+main form textarea {
+  background-color: rgba(199, 210, 212, 0.747);
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0px;
+  border-bottom: 1px solid rgb(252, 255, 222);
+  border-radius: 5px;
+  display: block;
+}
+main form input[type="tel"],
+main form select {
+  width: 40%;
+}
+main form textarea {
+  height: 100px;
+  border: 2px solid rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+
+main form input[type="submit"] {
+  padding: 10px;
+  border: 0px;
+  background-color: rgba(199, 210, 212, 0.747);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid black;
+}
+main {
+  background-color: rgba(234, 238, 238, 0.993);
+}
