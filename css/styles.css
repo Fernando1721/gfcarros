@@ -78,6 +78,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  margin-top: 50px;
 }
 
 footer div {
@@ -188,4 +189,9 @@ main form input[type="submit"] {
 }
 main {
   background-color: rgba(234, 238, 238, 0.993);
+}
+iframe {
+  width: 80%;
+  height: 500px;
+  margin-left: 10%;
 }
